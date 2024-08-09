@@ -129,13 +129,44 @@ ol {
 .section-address {
   display: flex;
   flex-direction: column;
+  background-color: $whitegrey;
+}
+#section-text {
+  font-size: 1.5em;
+  font-family: $font-title;
+  margin: 10px;
+  font-weight: $bold;
+  align-items: center;
+  text-align: center;
+}
+.section-address > p {
+  font-size: 1.5em;
+  font-family: $font-text;
+  align-items: center;
+  text-align: center;
+}
+.section-address > button {
+  margin: 40px;
+  font-size: 1.5em;
 }
 .background-ins > h5 {
-color: $whitepure;
-z-index: 2;
-font-family: $font-title;
+  font-family: $font-title;
+  color: $whitepure;
+  z-index: 2;
 }
+.mapa {
+  max-width: 100%; 
+  overflow: hidden; 
 
+  iframe {
+    width: 100%;
+    height: 300px; 
+    border: 5px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;  
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
