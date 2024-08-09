@@ -1,91 +1,40 @@
 @use "./assets/abstracts/" as *;
+@use "./assets/components/buttons.scss" as *;
+@use "./assets/layout/header.scss" as *;
+@use "./assets/styles./backgrounds" as *;
+@use "./assets/styles./resets.scss" as *;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+line-height: 1.5;
+font-weight: 400;
+color-scheme: light dark;
+color: rgb(255, 255, 255, 87%);
+background-color: #242424;
+font-synthesis: none;
+text-rendering: optimizelegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-size: 16px;
 }
 html {
-  scroll-behavior: smooth;
-}
-
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#vimeo-video {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  width: 310%;
-  height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -1;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 55%;
-  background: linear-gradient(to top, rgba(0,0,0,.0), rgba(0,.9,.9,.8));
-  z-index: -1; 
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: none;
-}
-a:hover {
-  color: #535bf2;
+scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
-  font-family: $font_title;
+  font-family: $font-title;
   font-size: 1.2em;
   line-height: 1.1;
   color: $whitepure;
   text-align: center;
 }
 
-.logo > img {
-  top: 0;
-  width: 90%;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
 .section-info {
   color: $blackdark;
 }
@@ -96,24 +45,6 @@ h1, h2, h3 {
   margin-right: 10px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 .section-ministerio {
   display: flex;
   flex-direction: column;
@@ -127,20 +58,11 @@ button:focus-visible {
   width: 90%;
 }
 h4 {
-  font-family: $font_text;
+  font-family: $font-text;
   font-size: 1.5em;
   font-weight: $regular;
 }
-.section-users {
-  display: flex;
-  flex-direction: column;
-}
-.section-users {
-  background-image: url("./public/background.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
+
 .section-users > i {
   font-size: 100px;
   align-items: center;
@@ -154,14 +76,37 @@ h4 {
   margin-right: 50px;
 }
 h5 {
-  font-family: $font_title;
-  font-size: 2em;
+  font-family: $font-title;
+  font-size: 2.3em;
   text-align: center;
+}
+.section-reqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $whitegrey;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+  margin: 0;
+
+  li {
+    margin: 30px;
+    font-family: $font-text;
+    font-size: 1.3em;
+    margin-bottom: 1.5rem;
+    line-height: 1.5; 
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
 }
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #fff;
   }
   a:hover {
     color: #747bff;
