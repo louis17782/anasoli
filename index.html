@@ -4,40 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
     <title>Colegio anasoli</title>
   </head>
   <body>
     <header>
       <a href="./index.html" class="logo">
-        <img src="./public/logo.png" alt="logo">
+        <img src="./logo.png" alt="logo">
       </a>
     </header>
-    <header class="background">
+    <header>
       <div class="video-container">
         <iframe id="vimeo-video" src="https://player.vimeo.com/video/859479910?h=ae29487cae&autoplay=1&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0&controls=0" frameborder="0"></iframe>
+        <div class="overlay"></div>
       </div>
     </header>
     <main>
       <section>
-        <div>
+        <div class="section-intro">
         <h1>CULMINA TU BACHILLERATO CON NUESTRO HORARIO FLEXIBLE IDEAL PARA TI</h1>
         <h2>U.E Colegio Cacica Anasoli</h2>
-      </div>
         <button>
-          <a href="">OBTÉN MÁS INFORMACIÓN</a>
+          <a class="section-info" href="">OBTÉN MÁS INFORMACIÓN</a>
         </button>
         <h3>EDUCACIÓN MODALIDAD JÓVENES Y ADULTOS</h3>
+      </div>
       </section>
-      <section>
-        <div>
-          <img src="./public/ministerio.png" alt="logo ministerio">
+      <section class="backwhite">
+        <div class="section-ministerio">
+          <img src="./ministry.png" alt="logo ministerio">
           <h4>Colegio Cacica Anasoli - Registrados en el Ministerio del Poder Popular para la Educación de Venezuela bajo el Código: PN00991306</h4>
         </div>   
       </section>
       <section>
+        <div class="section-users">
         <h5>INTRANET</h5>
-        <div>
           <i class="fa-solid fa-building-user"></i>
           <button><a href="">ACCESO AL PLANTEL</a></button>
           <i class="fa-solid fa-users-gear"></i>
@@ -47,48 +48,56 @@
         </div> 
       </section>
       <section>
-        <h5>Requisitos para la Inscripción</h5>
-        <img src="./public/img1.webp" alt="imagen">
-        <ol>
-          <li>Ser mayor de 15 años.</li>
-          <li>Constancia de promoción (en caso de cursar desde el 1er. Año). Notas certificadas.</li>
-          <li>Partida de nacimiento.</li>
-          <li>Copia y cédula de identidad del estudiante y del representante (si es menor de edad).</li>
-          <li>1 foto carnet del estudiante y del representante (si es menor de edad).</li>
-          <li>En caso de haber cursado estudios en el exterior las notas certificadas deben estar apostilladas.</li>
-          <li>También puede enviar copias por correo y luego originales por Tealca ó MRW.</li>
-        </ol>
+        <div class="section-reqs">
+          <h5>Requisitos para la Inscripción</h5>
+            <img src="./img1.webp" alt="imagen">
+            <ol>
+                <li><p>Ser mayor de 15 años.</p></li>
+                <li><p>Constancia de promoción (en caso de cursar desde el 1er. Año). Notas certificadas.</p></li>
+                <li><p>Partida de nacimiento.</p></li>
+                <li><p>Copia y cédula de identidad del estudiante y del representante (si es menor de edad).</p></li>
+                <li><p>1 foto carnet del estudiante y del representante (si es menor de edad).</p></li>
+                <li><p>En caso de haber cursado estudios en el exterior las notas certificadas deben estar apostilladas.</p></li>
+                <li><p>También puede enviar copias por correo y luego originales por Tealca ó MRW.</p></li>
+              </ol>
+        </div>
       </section>
       <section>
-        <h5>Educación para jóvenes y adultos</h5>
-        <img src="./public/estudiante.jpg" alt="estudiante">
-        <p>PRESENCIAL HORARIO FLEXIBLE</p>
-        <p>  La educación presencial se refiere a un enfoque tradicional de enseñanza y aprendizaje en el que los estudiantes asisten físicamente a un lugar designado, como un aula, una escuela o una universidad, para participar en las clases y actividades educativas. </p>
+        <div class="section-flex">
+          <h5>Educación para jóvenes y adultos</h5>
+            <img src="./estudiante.jpg" alt="estudiante">
+            <p class="title">PRESENCIAL HORARIO FLEXIBLE</p>
+            <p>La educación presencial se refiere a un enfoque tradicional de enseñanza y aprendizaje en el que los estudiantes asisten físicamente a un lugar designado, como un aula, una escuela o una universidad, para participar en las clases y actividades educativas. </p>
+        </div>
       </section>
       <section>
-        <div> 
+        <div class="section-address"> 
+          <div class="background-ins"> 
             <h5>INSCRIPCIONES ABIERTAS</h5>
-                  <p>COMUNICATE CON NUESTRO ASESOR DE ADMISIONES</p>
-                  <button><a href="">Envianos un mensaje</a></button>
-                  <p>U.E Colegio Cacica Anasoli</p>
-                  <p>Cabudare, Lara, Venezuela</p>
-                  <p>Av la Montañita, con Av El Placer, Cabudare 3023, Lara</p>
-                  <h5>Nuestra ubicaci&oacute;n</h5>
+          </div>
+            <p id="section-text">COMUNICATE CON NUESTRO ASESOR DE ADMISIONES</p>
+            <button><a href="">Envianos un mensaje</a></button>
+            <p>U.E Colegio Cacica Anasoli</p>
+            <p>Av la Montañita, con Av El Placer, Cabudare 3023, Lara</p>
+            <p>Cabudare, Lara, Venezuela</p>
+            <h5>Nuestra ubicaci&oacute;n</h5>
             <div class="mapa">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15715.350185483765!2d-69.2374603!3d10.0302612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e875d382488ee43%3A0x82218e73b7aa1055!2sU.E.%20Colegio%20Cacica%20Anasoli!5e0!3m2!1ses-419!2sve!4v1723062562157!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
+          </div>  
       </section>
-      <section>
-        <div>
+      <section class="background-quote">
+        <i class="fa-solid fa-quote-right"></i>
+        <div class="quote">
           <p>La enseñanza de las buenas costumbres o hábitos sociales es tan esencial como la instrucción.</p>
+          <div class="line"></div>
           <p>Simon Bolivar</p>
-          <img src="./public/bandera.webp" alt="la bandera">
+          <img src="./bandera.png" alt="la bandera">
         </div>
       </section>
       <section>
-        <div class="contenedor1">
-          <div class="form1">
+        <div class="contenedor-form">
+          <div class="form">
            <h6>Contactanos</h6>
             <div class="formulario">
               <form action="/submit-contacto" method="post">
@@ -107,8 +116,8 @@
       </section>
       <footer>
         <div class="content-footer">
-          <p class="copy">© Cacicaanasoli</p>
-          <p>Estamos presentando problemas con el instagram</p>
+          <p>© Cacica anasoli</p>
+          <!-- <p>Estamos presentando problemas con el instagram</p> -->
           <div class="contact-link">
             <a href="https://www.instagram.com/inprocica/" target="_blank" class="btn contact-details">
               <i class="fa-brands fa-instagram"></i>

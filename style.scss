@@ -1,107 +1,312 @@
 @use "./assets/abstracts/" as *;
+@use "./assets/components/buttons.scss" as *;
+@use "./assets/layout/header.scss" as *;
+@use "./assets/styles./backgrounds" as *;
+@use "./assets/styles./resets.scss" as *;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+line-height: 1.5;
+font-weight: 400;
+color-scheme: light dark;
+color: rgb(255, 255, 255, 87%);
+background-color: #242424;
+font-synthesis: none;
+text-rendering: optimizelegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
+
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-size: 16px;
 }
+
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.background {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0,.7));
-}
-
-#vimeo-video {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  width: 300%;
-  height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -1;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-h1 {
+h1, h2, h3, h6 {
+  font-family: $font-title;
   font-size: 1.2em;
   line-height: 1.1;
   color: $whitepure;
   text-align: center;
 }
 
-.logo > img {
-  top: 0;
-  width: 90%;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.section-info {
+  color: $blackdark;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section-ministerio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.backwhite {
+  background-color: $whitegrey;
+}
+
+.section-ministerio > img {
+  width: 90%;
+}
+
+h4 {
+  font-family: $font-text;
+  font-size: 1.5em;
+  font-weight: $regular;
+}
+
+.section-users > i {
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.section-users > button {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h5 {
+  font-family: $font-title;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.section-reqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $whitegrey;
+}
+
+.section-reqs > img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+  margin: 0;
+
+  li {
+    margin: 30px;
+    font-family: $font-text;
+    font-size: 1.3em;
+    margin-bottom: 1.5rem;
+    line-height: 1.5; 
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+}
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 1.9em;
+    text-align: center;
+    font-family: $font-title;
+    font-weight: $bold;
+  }
+
+  p{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px;
+  }
+
+}
+
+.section-flex > img {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.section-address {
+  display: flex;
+  flex-direction: column;
+  background-color: $whitegrey;
+}
+
+#section-text {
+  font-size: 1.5em;
+  font-family: $font-title;
+  margin: 10px;
+  font-weight: $bold;
+  align-items: center;
+  text-align: center;
+}
+
+.section-address > p {
+  font-size: 1.5em;
+  font-family: $font-text;
+  align-items: center;
+  text-align: center;
+}
+
+.section-address > button {
+  margin: 40px;
+  font-size: 1.5em;
+}
+
+.background-ins > h5 {
+  font-family: $font-title;
+  color: $whitepure;
+  z-index: 2;
+}
+
+.mapa {
+  max-width: 100%; 
+  overflow: hidden; 
+
+  iframe {
+    width: 100%;
+    height: 300px; 
+    border: 5px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;  
+  }
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-solid {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.line {
+  border: 1px solid $bluedark;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.quote > p {
+  align-items: center;
+  text-align: center;
+  font-family: $font-title;
+  font-size: 2.1em;
+}
+
+.contenedor-form {
+  display: flex;
+  flex-direction: column;
+  background: $bluedark;
+  padding: 20px;
+}
+
+.formulario {
+  width: 350px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 4px solid $bluestrong;
+  background-color: $whitepure;
+}
+.campo {
+  margin-bottom: 30px;
+}
+label {
+  color: #222;
+  font-family: 'Arial', sans-serif;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid $bluestrong;
+  border-radius: 5px;
+  background-color: transparent; 
+  color: #333;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid $bluedark;
+  border-radius: 5px;
+  background-color: $bluedark; 
+  color: $whitepure;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+
+button[type="submit"]:hover {
+  background-color: $offwhite;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  font-size: 50px;
+  animation: vibrate 7s;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-7px);
+  }
+  50% {
+    transform: translateX(7px);
+  }
+  75% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.content-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contact-link > a {
+  font-size: 30px;
+  color: $blackdark;
+  margin-left: 70px;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #fff;
   }
   a:hover {
     color: #747bff;

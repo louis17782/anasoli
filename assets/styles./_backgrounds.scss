@@ -1,0 +1,45 @@
+.section-users {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .section-flex {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .background-ins {
+    position: relative;
+    overflow: hidden;  
+    display: flex;
+    flex-direction: column;
+    background-image: url("/salon2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .background-ins::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+  }
+  .background-quote {
+    background-image: url("/libertador.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  
