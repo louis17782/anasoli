@@ -2,5 +2,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: 'https://github.com/louis17782/anasoli.git',
+  base: '/anasoli/',
 });
