@@ -19,7 +19,7 @@
     overflow: hidden;  
     display: flex;
     flex-direction: column;
-    background-image: url("/salon2.jpg");
+    background-image: url("./salon2.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -36,7 +36,7 @@
     z-index: 1; 
   }
   .background-quote {
-    background-image: url("/libertador.png");
+    background-image: url("./libertador.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

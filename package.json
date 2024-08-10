@@ -1,15 +1,18 @@
 {
-  "name": "proyect1",
+  "name": "anasoli",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
+    "gh-pages": "^6.1.1",
     "sass": "^1.77.8",
     "stylelint": "^16.5.0",
     "stylelint-config-standard-scss": "^13.1.0",
