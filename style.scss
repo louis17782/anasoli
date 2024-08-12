@@ -1,5 +1,6 @@
 @use "./assets/abstracts/" as *;
 @use "./assets/components/buttons.scss" as *;
+@use "./assets/layout/footer.scss" as *;
 @use "./assets/layout/header.scss" as *;
 @use "./assets/styles./backgrounds.scss" as *;
 @use "./assets/styles./resets.scss" as *;
@@ -86,7 +87,7 @@ h5 {
 }
 
 .section-reqs > img {
-  width: 350px;
+  width: 200px;
   border-radius: 10px;
 }
 
@@ -180,7 +181,7 @@ ol {
     height: 300px; 
     border: 5px solid #000;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
     object-fit: cover;  
   }
 }
@@ -226,12 +227,14 @@ ol {
   border: 4px solid $bluestrong;
   background-color: $whitepure;
 }
+
 .campo {
   margin-bottom: 30px;
 }
+
 label {
   color: #222;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .campo label {
@@ -269,46 +272,50 @@ button[type="submit"]:hover {
   font-size: 50px;
   animation: vibrate 7s;
 }
+
 @keyframes vibrate {
   0% {
     transform: translateX(0);
   }
+
   25% {
     transform: translateX(-7px);
   }
+
   50% {
     transform: translateX(7px);
   }
+
   75% {
     transform: translateX(-7px);
   }
+
   100% {
     transform: translateX(0);
   }
 }
 
-.content-footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: $whitepure;
-}
 
-.contact-link > a {
-  font-size: 30px;
-  color: $blackdark;
-  margin-left: 70px;
-  margin-top: 15px;
-}
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #fff;
-  }
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
+
+@media only screen and (768px <= width <= 1024px) {
+  #vimeo-video {
+    width: 500%;
+    height: 170%;
+  }
+}
+
+// @media only screen and (min-width: 1024px) {
+ 
+  
+// }
+
