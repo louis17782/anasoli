@@ -57,11 +57,13 @@ h4 {
   font-weight: $regular;
   color: $bluedark;
 }
+
 .user-item {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .user-item > i {
   font-size: 5em;
   margin: 20px;
@@ -80,6 +82,7 @@ h5 {
   align-items: center;
   background-color: $whitegrey;
 }
+
 .reqs img {
   width: 190px;
   align-items: center;
@@ -165,13 +168,13 @@ ol {
 .background-ins > h5 {
   font-family: $font-title;
   color: $whitepure;
-  z-index: 2;
+  z-index: 1;
 }
 
 .mapa {
   max-width: 100%; 
   overflow: hidden; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 
   iframe {
     width: 100%;
@@ -184,7 +187,7 @@ ol {
 }
 
 .mapa-container {
-  background-color: $whitegrey;
+  // background-color: $whitegrey;
   background: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 .9 .9 / 20%));
   padding: 50px;
 }
@@ -221,6 +224,13 @@ ol {
   flex-direction: column;
   background: $bluedark;
   padding: 20px;
+
+  p{
+    color: $offwhite;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .formulario {
@@ -315,9 +325,10 @@ button[type="submit"]:hover {
     width: 500%;
     height: 170%;
   }
+
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (width >= 1024px) {
   h1, h2, h3, h6 {
     font-size: 2em;
     margin-left: 100px;
@@ -384,8 +395,10 @@ button[type="submit"]:hover {
     margin-bottom: 30px; 
     text-align: center;
   }
+
 .reqs img {
-  width: 190px;
+  width: 20%; 
+  height: auto;
 }
 
 .section-reqs {
@@ -402,10 +415,6 @@ button[type="submit"]:hover {
   gap: 100px;
 }
 
-.reqs img {
-  width: 20%; 
-  height: auto;
-}
 
 .reqs-item {
   flex: 1; 
@@ -443,5 +452,24 @@ button[type="submit"]:hover {
   width: 70%;
 }
 
+.quote, img {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.background-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  border: 2px solid $bluedark;
+  width: 100px;
+}
 }
 
