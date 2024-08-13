@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+.content-footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: $whitepure;
+
+    p {
+      margin-left: 20px;
+    }
+  }
+  
+  .contact-link > a {
+    font-size: 30px;
+    color: $blackdark;
+    margin-left: 70px;
+    margin-top: 15px;
+  }
+
+  @media only screen and (width >= 1024px) {
+    .contact-link {
+      margin-left: 280px;
+  }
+}
