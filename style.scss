@@ -354,6 +354,24 @@ button[type="submit"]:hover {
   cursor: pointer;
 }
 
+//animations
+.hidden {
+  opacity: 1;
+  transform: translateY(0);
+  transition: none;
+
+  &.no-transition {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-color-scheme: light) {
   a:hover {
     color: #747bff;
