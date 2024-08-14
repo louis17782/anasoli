@@ -39,7 +39,6 @@ h1, h2, h3, h6 {
 .section-ministerio {
   display: flex;
   flex-direction: column;
-  margin: 0 0px;
 }
 
 .backwhite {
@@ -61,6 +60,7 @@ h4 {
 .section-users {
   padding: 20px;
 }
+
 .user-item {
   justify-content: center;
   align-items: center;
@@ -318,16 +318,15 @@ button[type="submit"]:hover {
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.6); 
   padding-top: 60px;
+  backdrop-filter: blur(5px);
 }
 
 .modal-content {
-  background-color: $bluedark;
+  background-color: $bluesolf;
   margin: 5% auto; 
   padding: 20px;
-  border: 1px solid #888;
+  border: 4px solid #888;
   width: 80%; 
   justify-content: center;
   align-items: center;
@@ -340,7 +339,7 @@ button[type="submit"]:hover {
 }
 
 /* El botón de cerrar */
-.close {
+#close {
   color: $offwhite;
   float: right;
   font-size: 28px;
@@ -348,13 +347,13 @@ button[type="submit"]:hover {
   
 }
 
-.close:hover,
-.close:focus {
+#close:hover,
+#close:focus {
   text-decoration: none;
   cursor: pointer;
 }
 
-//animations
+// animations
 .hidden {
   opacity: 1;
   transform: translateY(0);
@@ -539,6 +538,14 @@ button[type="submit"]:hover {
 
 .modal-content {
 width: 250px;
+}
+
+.modal-content {
+  padding: 20px;
+  width: 70%; 
+  p {
+    font-size: 2em;
+  }
 }
 }
 
