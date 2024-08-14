@@ -399,6 +399,7 @@ button[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 100px;
   }
 
   .section-ministerio > h4 {
@@ -406,8 +407,7 @@ button[type="submit"]:hover {
   }
   
   .section-ministerio > img {
-    width: 50%;
-    margin-right: 10px;
+    width: 80%;
   }
 
   .section-users {
@@ -415,6 +415,7 @@ button[type="submit"]:hover {
     flex-direction: column; 
     align-items: center; 
     gap: 20px;
+    padding: 100px;
   }
   
   .user-items-container {
@@ -450,6 +451,7 @@ button[type="submit"]:hover {
   flex-direction: column;
   align-items: center; 
   gap: 20px;
+  padding: 70px;
 }
 
 .reqs {
@@ -470,6 +472,7 @@ button[type="submit"]:hover {
 }
 
 .section-flex {
+  padding: 100px;
   justify-content: center;
   align-items: center;
 }
