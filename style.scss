@@ -39,13 +39,12 @@ h1, h2, h3, h6 {
 .section-ministerio {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 30px;
+  margin: 0 0px;
 }
 
 .backwhite {
   background-color: $whitegrey;
-  padding: 100px;
+  padding: 10px;
 }
 
 .section-ministerio > img {
@@ -59,6 +58,9 @@ h4 {
   color: $bluedark;
 }
 
+.section-users {
+  padding: 20px;
+}
 .user-item {
   justify-content: center;
   align-items: center;
@@ -75,6 +77,7 @@ h5 {
   font-size: 2.5em;
   text-align: center;
   color: $bluedark;
+  z-index: 1;
 }
 
 .section-reqs {
@@ -114,6 +117,7 @@ ol {
 .section-flex {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 
   .title {
     font-size: 1.9em;
@@ -125,8 +129,6 @@ ol {
 
   p{
     font-size: 1.5em;
-    text-align: center;
-    margin: 10px;
     color: $bluedark;
   }
 
@@ -134,7 +136,6 @@ ol {
 
 .section-flex > img {
   border-radius: 50%;
-  margin: 10px;
 }
 
 .section-address {
@@ -188,9 +189,8 @@ ol {
 }
 
 .mapa-container {
-  // background-color: $whitegrey;
   background: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 .9 .9 / 20%));
-  padding: 50px;
+  padding: 30px;
 }
 
 .quote {
