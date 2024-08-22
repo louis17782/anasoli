@@ -1,23 +1,23 @@
 import './style.scss'
 
 //modal
-const modal = document.getElementById("myModal");
-const span = document.getElementById("close");
-const ig = document.getElementById("igbutton");
+// const modal = document.getElementById("myModal");
+// const span = document.getElementById("close");
+// const ig = document.getElementById("igbutton");
 
-ig.onclick = function() {
-  modal.style.display = "block";
-};
+// ig.onclick = function() {
+//   modal.style.display = "block";
+// };
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
 //animations
 
 document.addEventListener('DOMContentLoaded', function () {
